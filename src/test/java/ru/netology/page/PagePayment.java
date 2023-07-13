@@ -14,8 +14,8 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class PagePayment {
     private final SelenideElement cardNumberField = $("[placeholder = '0000 0000 0000 0000']");
-    private final SelenideElement monthField = $("[placeholder = '08']");
-    private final SelenideElement yearField = $("[placeholder = '22']");
+    private final SelenideElement monthField = $("[placeholder = '06']");
+    private final SelenideElement yearField = $("[placeholder = '23']");
     private final SelenideElement ownerField = $$("[class='input__control']").get(3);
     private final SelenideElement cvvField = $("[placeholder='999']");
     private final SelenideElement buttonForContinue = $(byText("Продолжить"));

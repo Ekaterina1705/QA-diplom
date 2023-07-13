@@ -27,7 +27,7 @@ public class DataHelper {
     }
 
     public static String getValidMonth() {
-        return "08";
+        return "06";
     }
 
     public static String getInvalidMonth() {
