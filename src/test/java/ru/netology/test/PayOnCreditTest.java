@@ -104,7 +104,7 @@ public class PayOnCreditTest {
     }
 
     @Test
-    @DisplayName("Тест с неверно указаным сроком действия карты")
+    @DisplayName("Тест с неверно указанным сроком действия карты")
     void shouldCheckWithTheIncorrectlySpecifiedCardExpirationDate() {
         var payForm = pageMain.payCreditByCard();
         var invalidYear = DataHelper.getInvalidYearInfo();
@@ -113,7 +113,7 @@ public class PayOnCreditTest {
     }
 
     @Test
-    @DisplayName("Тест данные владельца карты на киррилице")
+    @DisplayName("Тест данные владельца карты на кириллице")
     void shouldCheckTheOwnersDataInCyrillic() {
         var payForm = pageMain.payCreditByCard();
         var invalidOwner = DataHelper.getInvalidOwnerInfo();

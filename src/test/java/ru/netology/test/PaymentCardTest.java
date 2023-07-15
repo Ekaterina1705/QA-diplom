@@ -68,7 +68,7 @@ public class PaymentCardTest{
 
     @Test
     @DisplayName("Тест невалидной карты")
-    void shouldheckTheInvalidCard() {
+    void shouldHeckTheInvalidCard() {
         var payForm = pageMain.payByDebitCard();
         var invalidCardNumber = DataHelper.getInvalidCardNumberInfo();
         payForm.fillingForm(invalidCardNumber);
@@ -103,7 +103,7 @@ public class PaymentCardTest{
     }
 
     @Test
-    @DisplayName("Тест с неверно указаным сроком действия карты")
+    @DisplayName("Тест с неверно указанным сроком действия карты")
     void shouldCheckWithTheIncorrectlySpecifiedCardExpirationDate() {
         var payForm = pageMain.payByDebitCard();
         var invalidYear = DataHelper.getInvalidYearInfo();
@@ -112,7 +112,7 @@ public class PaymentCardTest{
     }
 
     @Test
-    @DisplayName("Тест данные владельца карты на киррилице")
+    @DisplayName("Тест данные владельца карты на кириллице")
     void shouldCheckTheOwnersDataInCyrillic() {
         var payForm = pageMain.payByDebitCard();
         var invalidOwner = DataHelper.getInvalidOwnerInfo();
