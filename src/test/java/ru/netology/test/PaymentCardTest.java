@@ -68,7 +68,7 @@ public class PaymentCardTest{
 
     @Test
     @DisplayName("Тест невалидной карты")
-    void shouldHeckTheInvalidCard() {
+    void shouldCheckTheInvalidCard() {
         var payForm = pageMain.payByDebitCard();
         var invalidCardNumber = DataHelper.getInvalidCardNumberInfo();
         payForm.fillingForm(invalidCardNumber);
